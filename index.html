@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VTH Summer Camp</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-sans">
+
+    <nav id="topnav" class="topnav w-full bg-transparent fixed top-0 z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+            <!-- Left: Logo -->
+            <div class="flex items-center space-x-4">
+                <a href="/"><img src="assets/images/vth-logo-main.png" alt="VTH Logo" class="h-20 w-auto" /></a>
+            </div>
+
+            <!-- Middle: Nav Links (Right-aligned) -->
+            <div class="hidden md:flex flex-1 justify-end space-x-6 text-lg font-medium pr-10" style="font-family: 'Poppins', sans-serif;">
+                <a href="#summercamp" class="nav-link text-white group relative">
+                    <span class="lang-en">VTH Summer Camp</span>
+                    <span class="lang-vi">Trại Hè VTH</span>
+                    <span class="absolute left-0 -bottom-0 w-full h-0.5 bg-white scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
+                </a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfA_rcFoWRGE9biN38SRJMghRVA4ck8jia4NJyfMgRU4ZwVdA/viewform" class="text-white bg-blue-600 px-4 py-1 rounded-full hover:bg-blue-700 group relative">
+                    <span class="lang-en">Register Now!</span>
+                    <span class="lang-vi">Đăng ký ngay!</span>  
+                </a>
+                <a href="#fees" class="nav-link text-white group relative">
+                    <span class="lang-en">Our Fees</span>
+                    <span class="lang-vi">Học phí</span>
+                    <span class="absolute left-0 -bottom-0 w-full h-0.5 bg-white scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
+                </a>
+            </div>
+            
+            <!-- RIGHT: Language Switcher -->
+            <div class="flex flex-col items-center text-sm font-bold leading-tight text-white">
+                <button id="lang-vi" onclick="switchLanguage('vi')" class="hover:text-blue-700">VI</button>
+                <span class="my-1 w-6 h-0.5 bg-white rounded-full"></span>
+                <button id="lang-en" onclick="switchLanguage('en')" class="text-blue-700 font-bold">EN</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="summercamp" class="hero bg-cover bg-center min-h-screen w-full flex items-center justify-center text-center" style="background-image: url('assets/images/hero-bg-3.png');">
+    </section>
+
+    <!-- About Section --> 
+    <section class="about bg-cover bg-center min-h-screen w-full flex items-center justify-center text-center" style="background-image: url('assets/images/2ndimg.png');">
+    </section>
+
+    <!-- Fees Section -->
+    <section id="fees" class="fees bg-cover bg-center min-h-screen w-full flex items-center justify-center text-center" style="background-image: url('assets/images/3rdimg.png');">
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-900 text-white pt-10 pb-6">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+
+            <!-- Logo & Description -->
+            <div>
+                <img src="assets/images/vth-logo-main.png" alt="VTH Logo" class="h-16 mx-auto md:mx-0 mb-4">
+                <p class="text-sm text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quibusdam rerum, fugiat modi deleniti error! Rerum deleniti similique nobis ipsum! Aliquam molestiae ex similique in. Maxime repellendus nobis commodi praesentium!</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h4 class="text-lg font-semibold mb-3">Quick Links</h4>
+                <ul class="space-y-2 text-sm text-gray-300">
+                <li><a href="#summercamp" class="hover:text-blue-400">Summer Camp</a></li>
+                <li><a href="#fees" class="hover:text-blue-400">Our Fees</a></li>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfA_rcFoWRGE9biN38SRJMghRVA4ck8jia4NJyfMgRU4ZwVdA/viewform" class="hover:text-blue-400">Register</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div>
+                <h4 class="text-lg font-semibold mb-3">Contact Us</h4>
+                <div class="flex items-center justify-center md:justify-start space-x-2 text-sm text-gray-300 mb-1">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12H8m8 0a4 4 0 100-8 4 4 0 000 8zm0 0a4 4 0 110 8 4 4 0 010-8z" />
+                </svg>
+                <span>kalimutan ko po ung email@gmail.com</span>
+                </div>
+                <div class="flex items-center justify-center md:justify-start space-x-2 text-sm text-gray-300 mb-1">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 12.414A5 5 0 005 7h0a5 5 0 007.071-7.071L16.657 6.343a8 8 0 011.414 10.314 8 8 0 01-1.414 1.414z" />
+                </svg>
+                <span>Vietnam</span>
+                </div>
+                <div class="flex items-center justify-center md:justify-start space-x-2 text-sm text-gray-300">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h2l3 12h11l3-9H6" />
+                </svg>
+                <span>+84 123 456 789</span>
+                </div>
+            </div>
+            </div>
+
+            <div class="mt-10 border-t border-gray-700 pt-4 text-center text-xs text-gray-500">
+            &copy; 2025 VTH Summer Camp. All rights reserved.
+            </div>
+        </div>
+        </footer>
+
+
+    <script src="assets/js/languagetgl.js"></script> 
+    <script src="assets/js/sectionname.js"></script>
+    <script src="assets/js/scrolltopnav.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@latest/bundled/lenis.min.js"></script>
+    <script>
+    const lenis = new Lenis()
+
+    function raf(time) {
+        lenis.raf(time)
+        requestAnimationFrame(raf)
+    }
+
+    requestAnimationFrame(raf)
+
+    // Only prevent default for anchor links with href starting with '#'
+document.querySelectorAll('.nav-link').forEach(link => {
+  link.addEventListener('click', function(e) {
+    const href = this.getAttribute('href');
+    if (href && href.startsWith('#')) {
+      e.preventDefault();
+      const targetId = href.replace('#', '');
+      const target = document.getElementById(targetId);
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  });
+});
+    </script>
+
+
+
+</body>
+</html>
